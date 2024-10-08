@@ -1,0 +1,8 @@
+{
+    "stdio": true,
+    "version": false,
+    "prompt_file": "C:\\Users\\PMYLS\\Desktop\\Zortik\\Fuzz-LSP\\prompts\\misra_prompt_v3.txt",
+    "backend": "ollama",
+    "connect_test": false,
+    "retry_prompt": "C:\\Users\\PMYLS\\Desktop\\Zortik\\Fuzz-LSP\\prompts\\retry_prompt.txt"
+}

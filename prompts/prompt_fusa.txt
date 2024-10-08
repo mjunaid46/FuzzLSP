@@ -1,0 +1,4 @@
+Use and reference only the following guides and specifications.
+- Autosar C++ 14 
+- Any Safety Manuals and guides included below
+

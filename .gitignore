@@ -1,0 +1,6 @@
+credentials.env
+fuzz-lsp
+pkg
+venv
+*.log
+*.exe

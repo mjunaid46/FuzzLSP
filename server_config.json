@@ -1,0 +1,9 @@
+{
+    "stdio": true,
+    "version": false,
+    "backend": "ollama",
+    "modelName": "deepseek-v2",
+    "prompt_file": "C:\\Users\\PMYLS\\Desktop\\Zortik\\llm-code-analysis-workflow\\misra_prompt_v3.txt",
+    "retry_prompt": "C:\\Users\\PMYLS\\Desktop\\Zortik\\Fuzz-LSP\\prompts\\retry_prompt.txt",
+    "connect_test": false
+}

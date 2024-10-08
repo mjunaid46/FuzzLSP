@@ -1,0 +1,65 @@
+Code MUST follow these MISRA C Coding Guidelines
+
+MUST follow these Style Rules
+
+Spaces over Tabs: Use 4 spaces for indentation; do not use tabs.
+Line Length: Aim for a maximum of 76 columns.
+Pointer Placement: Place the * directly next to the variable name (e.g., int *ptr).
+Consistent Formatting: Align variable names where possible and match the style of surrounding code. Clean up deviations in separate commits.
+The statement forming the body of an "if", "else if", "else", "while", "do ... while", or "for" statement shall always be enclosed in braces
+An if (expression) construct shall be followed by a compound statement. The else keyword shall be followed by either a compound statement, or another if statement
+All if … else if constructs shall be terminated with an else clause
+A pointer resulting from arithmetic on a pointer operand shall address an element of the same array as that pointer operand
+The sizeof operator shall not have an operand which is a function parameter declared as "array of type"
+The Standard Library function system of <stdlib.h> shall not be used
+Alignment of objects (<stdalign.h>)
+No-return functions (<stdnoreturn.h>)
+Type generic expressions (_Generic)
+Obsolescent language features shall not be used 
+
+MUST follow these Code Practices
+Declarations and Definitions:
+    - Declare all variables at the beginning of a block.
+    - Avoid using global variables; use static variables where possible.
+Control Structures:
+    - Use only approved control structures.
+    - Avoid using goto statements.
+    - Ensure all loops have a fixed upper limit.
+Functions:
+    - Keep functions short and focused on a single task.
+    - Use function prototypes.
+    - Limit the number of parameters to a function.
+Data Types:
+    - Use only standard MISRA-compliant data types.
+    - Avoid dynamic memory allocation (malloc, calloc, free).
+
+Commenting
+
+1. Style: Use consistent comment styles.
+    - Important single-line comments: /* Comment */
+    - Multi-line comments:
+        /*
+         * Multi-line comment
+         * continues here.
+         */
+2. Content: Describe the intent, not the action. Use full sentences, correct grammar, and spelling. Avoid non-obvious abbreviations.
+
+Code Formatting
+
+1. Bracing Style: Use K&R style for blocks. Always brace even single-line statements.
+    if (condition) {
+        action();
+    }
+2. Single Exit Point: Use a single exit point with goto for error handling.
+    int function() {
+        int err = ERR_OK;
+        if (failure_case) {
+            err = ERR_FAILURE;
+            goto out;
+        }
+    out:
+        return err;
+    }
+3. Macro Wrapping: Wrap non-trivial macros in do {...} while (0).
+4. Avoid Magic Numbers: Use enumerations or constants instead.
+5. Bitfield Widths: Define bitfield widths for BOOL, enums, and flags to ensure proper alignment.

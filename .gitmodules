@@ -1,0 +1,6 @@
+[submodule "submodules-test/nano"]
+	path = submodules-test/nano
+	url = https://github.com/madnight/nano
+[submodule "submodules-test/kool"]
+	path = submodules-test/kool
+	url = https://github.com/kool-dev/kool
